@@ -1,10 +1,11 @@
 #the entry files
 import typer
 
-
-def main(name: str):
-    print(f"Hello {name}")
+app = typer.Typer()
+@app.command()
+def version(version: str):
+    print(f"xyra calculator version pre:0.1")
 
 
 if __name__ == "__main__":
-    typer.run(main)
+    app()
