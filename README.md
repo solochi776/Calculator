@@ -43,7 +43,7 @@ check the instructions from [how to run file](./setup.md)
    git commit -m "Implement <task description>"
    ```
 4. Push branch to remote:
-   ```bash
+   ```bash and risk 
    git push origin feature/<name>-<task>
    ```
 5. Open a Pull Request (PR) to merge into `main`.
