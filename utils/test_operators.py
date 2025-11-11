@@ -20,10 +20,12 @@ def test_add_invalid():
 def test_multiply_valid():
     assert op.multiply(5, 5) == 25
     assert op.multiply("5", 5) == 25
-    assert op.multiply("3.5", 2) == 7.0
+    assert op.multiply("3.5", 2) == 
+    assert op.divide(10,5) == 2
+    assert op.divide("10",2) == 5
 
 
-def test_multiply_invalid():
+def test_multiply
     with pytest.raises(ValueError):
         op.multiply("a", "b")
     with pytest.raises(TypeError):
@@ -44,3 +46,4 @@ def test_modulus_invalid():
         op.modulus({"x": 1}, 5)
     with pytest.raises(ZeroDivisionError):
         op.modulus(10, 0)
+
